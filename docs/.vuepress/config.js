@@ -12,23 +12,37 @@ module.exports = {
     nav:[ // 导航栏配置
       {text: '前端基础', link: '/accumulate/' },
       {text: '算法题库', link: '/algorithm/'},
-      {text: '微博', link: 'https://github.com/sunshine-lgtm/sunshine-lgtm.github.io'}      
+      {text: '微博', link: 'https://github.com/sunshine-lgtm/blog.git'}      
     ],
     sidebar: [
       {
+        title: 'JavaScript',   // 必要的
+        children: [
+          ['/JavaScript/Promise', 'Promise'],
+          ['/JavaScript/EventLoop事件循环', 'EventLoop事件循环'],
+          ['/JavaScript/防抖、节流', '防抖、节流'],
+          ['/JavaScript/原型', '原型']
+        ]
+      },
+      {
+        title: 'TypeScript',   // 必要的
+        children: [
+          ['/TypeScript/基础知识', '基础知识']
+        ]
+      },
+      {
           title: 'HTTP',   // 必要的
-          path: '',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-          collapsable: false, // 可选的, 默认值是 true,
-          // sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
-            ['/http/1.x', 'HTTP 1.x'],
-            ['/http/2.x', 'HTTP 2.x'],
+            ['/HTTP/1.x', 'HTTP 1.x'],
+            ['/HTTP/2.x', 'HTTP 2.x'],
           ]
         },
         {
           title: 'Vue',
-          children: ['dsd', 'dsd'],
-          initialOpenGroupIndex: -1 // 可选的, 默认值是 0
+          children: [
+            ['/Vue/Computed', 'HTTP 1.x'],
+            // ['/Vue/2.x', 'HTTP 2.x'],
+          ]
         }
     ], // 侧边栏配置
     sidebarDepth: 2, // 侧边栏显示2级
