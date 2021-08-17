@@ -40,8 +40,10 @@ module.exports = {
         {
           title: 'Vue',
           children: [
-            ['/Vue/Computed', 'HTTP 1.x'],
-            // ['/Vue/2.x', 'HTTP 2.x'],
+            ['/Vue/基础概念', '基础概念'],
+            ['/Vue/Vue2源码分析', 'Vue2源码分析'],
+            ['/Vue/Vue3源码分析', 'Vue3源码分析'],
+            ['/Vue/$nextTick', '$nextTick'],
           ]
         }
     ], // 侧边栏配置
